@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: bisque;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.header p, .header h1 {
+    margin-top: -1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fffafa;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center; 
+}   
+  
+.profile-pic {
+    margin-top: 20px;
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 50%; 
+    margin-bottom: 20px;
+}
+  
+.info {
+    display: flex;
+    justify-content: space-between; 
+    margin: 20px 0;
+}
+
+.skills p {
+    margin-bottom: -0.5rem;
+}
+.about-me-section {
+    padding-left: 1rem;
+    margin-left: 2rem;
+    text-align: left;
+    border-right: 2px solid black;
+    width: 60%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    float: left;
+}
+
+.contact-info {
+    margin-right: 2rem;
+    width: 40%;
+    text-align: left;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    float: right;
+}
+
+.skill-icon {
+    width: 20px; 
+    height: 20px;
+    margin-right: 5px;  
+    vertical-align: middle;
+}
+
+.contact {
+    margin-left: 1rem;
+}
+
+.contact-icon {
+    width: 20px; 
+    height: 20px;
+    margin-right: 5px;  
+    vertical-align: middle;
+ }
+
+.skills h4, .education h4 {
+    margin-top: -0.5rem;
+}
+
+.main h4 {
+    max-width: 600px;
+    width: 355px;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    margin-left: -1rem;
+    border-bottom: 2PX solid black;
+}
+
+.sidebar li, .sidebar p {
+    margin-left: -2rem;
+}
+
+.lang h4, .achievements h4{
+    border-top: 2px solid black;
+    padding-top: 0.5rem;
+    margin-top: 5rem;
+}
+
+.lang-bar {
+    width: 150px; 
+    height: 10px; 
+    background-color: #ddd; 
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+    margin-left: -2rem;
+  }
+  
+.lang-progress {
+    background-color: #000; 
+    height: 100%; 
+    border-radius: 5px;
+}
+
+.main {
+    display: flex; 
+    margin: 2rem;
+}
+
+.sidebar {
+    padding-top: -2rem;
+    margin-top: -2rem;
+    width: 30%;
+    background-color: #fffafa;
+    padding: 15px;
+    border-right: 2px solid black;
+}
+
+.exp h4 {
+    padding-top: 0.5rem;
+    border-top: 2px solid black;
+}
+
+.education h4, .exp h4 {
+    max-width: 50rem;
+    padding-top: -2rem;
+    width: auto;
+}
+
+.content {
+    padding-top: -2rem;
+    margin-top: -2rem;
+    background-color: #fffafa;
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 70%;
+}
+
+@media (max-width: 1000px) {
+    .about-me-section, .contact-info {
+        text-align: center;
+        border-right: none;
+        width: auto;
+        margin-right: 2rem;
+    }
+    
+    .contact {
+        padding-left: 2rem;
+    }
+    .contact-info {
+        border: none;
+    }
+    
+    .info, .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sidebar, .content {
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        border: none;
+        width: auto;
+        margin-bottom: 20px; 
+    }
+    
+    .skills h4, .lang h4, .achievements h4 {
+        padding-left: 1.5rem;
+    }
+    .skills h4, .lang h4, .achievements h4, .education h4, .exp h4 {
+        padding-top: 0.5rem;
+        margin-top: 2rem;
+        max-width: 1300px;
+        border: 2px solid black;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .skills li, .lang li, .achievements li {
+        font-size: 16px;
+        display: flex;
+        width: auto;
+        justify-content: center;
+    }
+
+    .lang-bar {
+        margin-left: 2rem;
+        width: 150px; 
+        height: 10px; 
+        background-color: #ddd; 
+        border-radius: 5px; 
+        margin-top: 5px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      
+    .lang-progress {
+        background-color: #000; 
+        height: 100%; 
+        border-radius: 5px;
+    }
+    .content li {
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-me-section, .contact-info {
+        text-align: center;
+        border-right: none;
+        width: auto;
+        margin-right: 2rem;
+    }
+    
+    .contact {
+        padding-left: 2rem;
+    }
+    .contact-info {
+        border: none;
+    }
+    
+    .info, .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sidebar, .content {
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        border: none;
+        width: auto;
+        margin-bottom: 20px; 
+    }
+    
+    .skills h4, .lang h4, .achievements h4 {
+        padding-left: 1.5rem;
+    }
+    .skills h4, .lang h4, .achievements h4, .education h4, .exp h4 {
+        padding-top: 0.5rem;
+        margin-top: 2rem;
+        max-width: 1300px;
+        border: 2px solid black;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .skills li, .lang li, .achievements li {
+        font-size: 16px;
+        display: flex;
+        width: auto;
+        justify-content: center;
+    }
+
+    .lang-bar {
+        margin-left: 2rem;
+        width: 150px; 
+        height: 10px; 
+        background-color: #ddd; 
+        border-radius: 5px; 
+        margin-top: 5px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      
+    .lang-progress {
+        background-color: #000; 
+        height: 100%; 
+        border-radius: 5px;
+    }
+    .content li {
+        text-align: left;
+    }
+}
